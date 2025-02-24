@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;  /* จัดการให้อยู่ตรงกลางในแนวนอน */
+    align-items: center;      /* จัดการให้อยู่ตรงกลางในแนวตั้ง */
+    height: 100vh;            /* ให้ครอบคลุมทั้งหน้าจอ */
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #d32f2f;
+    font-size: 4em;  /* ขนาดข้อความใน PC */
+}
+
+h2 {
+    color: #555;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 15px 30px; /* ขนาดปุ่มใหญ่ขึ้น */
+    margin: 10px;
+    font-size: 20px; /* ขนาดตัวอักษรของปุ่ม */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #b71c1c;
+}
+
+/* Media Queries สำหรับขนาดหน้าจอที่เล็กลง */
+@media (max-width: 768px) {  /* สำหรับแท็บเล็ต */
+    h1 {
+        font-size: 3.5em;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 480px) {  /* สำหรับมือถือ */
+    h1 {
+        font-size: 3em;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
